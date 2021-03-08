@@ -10,10 +10,6 @@
 		0E410EABCC59D55925293EA7 /* Pods_challenge_pag_challenge_pagUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DF67FE2182C614FDFA7E42BC /* Pods_challenge_pag_challenge_pagUITests.framework */; };
 		69D85E94D15FD6B9DA157CF9 /* Pods_challenge_pag.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 64B6F5219DEE75923AEF102C /* Pods_challenge_pag.framework */; };
 		E3377E5325F6DF0D00D2B601 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E5225F6DF0D00D2B601 /* AppDelegate.swift */; };
-		E3377E5525F6DF0D00D2B601 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E5425F6DF0D00D2B601 /* SceneDelegate.swift */; };
-		E3377E5725F6DF0D00D2B601 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E5625F6DF0D00D2B601 /* ViewController.swift */; };
-		E3377E5A25F6DF0D00D2B601 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3377E5825F6DF0D00D2B601 /* Main.storyboard */; };
-		E3377E5D25F6DF0D00D2B601 /* challenge_pag.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E3377E5B25F6DF0D00D2B601 /* challenge_pag.xcdatamodeld */; };
 		E3377E5F25F6DF0E00D2B601 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E3377E5E25F6DF0E00D2B601 /* Assets.xcassets */; };
 		E3377E6225F6DF0E00D2B601 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3377E6025F6DF0E00D2B601 /* LaunchScreen.storyboard */; };
 		E3377E6D25F6DF0E00D2B601 /* challenge_pagTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E3377E6C25F6DF0E00D2B601 /* challenge_pagTests.swift */; };
@@ -50,10 +46,6 @@
 		DF67FE2182C614FDFA7E42BC /* Pods_challenge_pag_challenge_pagUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_challenge_pag_challenge_pagUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3377E4F25F6DF0D00D2B601 /* challenge-pag.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "challenge-pag.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3377E5225F6DF0D00D2B601 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E3377E5425F6DF0D00D2B601 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		E3377E5625F6DF0D00D2B601 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E3377E5925F6DF0D00D2B601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		E3377E5C25F6DF0D00D2B601 /* challenge_pag.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = challenge_pag.xcdatamodel; sourceTree = "<group>"; };
 		E3377E5E25F6DF0E00D2B601 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E3377E6125F6DF0E00D2B601 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E3377E6325F6DF0E00D2B601 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -141,14 +133,12 @@
 		E3377E5125F6DF0D00D2B601 /* challenge-pag */ = {
 			isa = PBXGroup;
 			children = (
-				E3377E5225F6DF0D00D2B601 /* AppDelegate.swift */,
-				E3377E5425F6DF0D00D2B601 /* SceneDelegate.swift */,
-				E3377E5625F6DF0D00D2B601 /* ViewController.swift */,
-				E3377E5825F6DF0D00D2B601 /* Main.storyboard */,
-				E3377E5E25F6DF0E00D2B601 /* Assets.xcassets */,
-				E3377E6025F6DF0E00D2B601 /* LaunchScreen.storyboard */,
-				E3377E6325F6DF0E00D2B601 /* Info.plist */,
-				E3377E5B25F6DF0D00D2B601 /* challenge_pag.xcdatamodeld */,
+				E34B543C25F6E12500A52809 /* app */,
+				E34B543D25F6E12B00A52809 /* assets */,
+				E34B543F25F6E13E00A52809 /* networking */,
+				E34B543E25F6E13700A52809 /* models */,
+				E34B543B25F6E10C00A52809 /* screens */,
+				E34B544025F6E14800A52809 /* storyboards */,
 			);
 			path = "challenge-pag";
 			sourceTree = "<group>";
@@ -169,6 +159,52 @@
 				E3377E7925F6DF0E00D2B601 /* Info.plist */,
 			);
 			path = "challenge-pagUITests";
+			sourceTree = "<group>";
+		};
+		E34B543B25F6E10C00A52809 /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
+			sourceTree = "<group>";
+		};
+		E34B543C25F6E12500A52809 /* app */ = {
+			isa = PBXGroup;
+			children = (
+				E3377E6325F6DF0E00D2B601 /* Info.plist */,
+				E3377E5225F6DF0D00D2B601 /* AppDelegate.swift */,
+			);
+			path = app;
+			sourceTree = "<group>";
+		};
+		E34B543D25F6E12B00A52809 /* assets */ = {
+			isa = PBXGroup;
+			children = (
+				E3377E5E25F6DF0E00D2B601 /* Assets.xcassets */,
+			);
+			path = assets;
+			sourceTree = "<group>";
+		};
+		E34B543E25F6E13700A52809 /* models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = models;
+			sourceTree = "<group>";
+		};
+		E34B543F25F6E13E00A52809 /* networking */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = networking;
+			sourceTree = "<group>";
+		};
+		E34B544025F6E14800A52809 /* storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				E3377E6025F6DF0E00D2B601 /* LaunchScreen.storyboard */,
+			);
+			path = storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -279,7 +315,6 @@
 			files = (
 				E3377E6225F6DF0E00D2B601 /* LaunchScreen.storyboard in Resources */,
 				E3377E5F25F6DF0E00D2B601 /* Assets.xcassets in Resources */,
-				E3377E5A25F6DF0D00D2B601 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -373,10 +408,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E3377E5D25F6DF0D00D2B601 /* challenge_pag.xcdatamodeld in Sources */,
-				E3377E5725F6DF0D00D2B601 /* ViewController.swift in Sources */,
 				E3377E5325F6DF0D00D2B601 /* AppDelegate.swift in Sources */,
-				E3377E5525F6DF0D00D2B601 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,14 +444,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E3377E5825F6DF0D00D2B601 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E3377E5925F6DF0D00D2B601 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E3377E6025F6DF0E00D2B601 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -555,7 +579,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65Q2A73U8;
-				INFOPLIST_FILE = "challenge-pag/Info.plist";
+				INFOPLIST_FILE = "challenge-pag/app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -575,7 +599,7 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = F65Q2A73U8;
-				INFOPLIST_FILE = "challenge-pag/Info.plist";
+				INFOPLIST_FILE = "challenge-pag/app/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -715,19 +739,6 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
-
-/* Begin XCVersionGroup section */
-		E3377E5B25F6DF0D00D2B601 /* challenge_pag.xcdatamodeld */ = {
-			isa = XCVersionGroup;
-			children = (
-				E3377E5C25F6DF0D00D2B601 /* challenge_pag.xcdatamodel */,
-			);
-			currentVersion = E3377E5C25F6DF0D00D2B601 /* challenge_pag.xcdatamodel */;
-			path = challenge_pag.xcdatamodeld;
-			sourceTree = "<group>";
-			versionGroupType = wrapper.xcdatamodel;
-		};
-/* End XCVersionGroup section */
 	};
 	rootObject = E3377E4725F6DF0D00D2B601 /* Project object */;
 }
