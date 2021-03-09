@@ -64,9 +64,9 @@ class HomeViewController: UIViewController {
 }
 
 extension HomeViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, didDeselectRowAt indexPath: IndexPath) {
-        tableView.deselectRow(at: indexPath, animated: true)
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         if let navigation = self.navigationController {
+            tableView.deselectRow(at: indexPath, animated: true)
             self.presenter?.showDetailController(navigationController: navigation, indexPath: indexPath)
         }
     }

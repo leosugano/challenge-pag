@@ -8,15 +8,13 @@
 import Foundation
 import UIKit
 
-protocol ViewToPresenterHomeProtocol: class{
-    
+protocol ViewToPresenterHomeProtocol: class {
     var view: PresenterToViewHomeProtocol? {get set}
     var interactor: PresenterToInteractorHomeProtocol? {get set}
     var router: PresenterToRouterHomeProtocol? {get set}
     var beersResponse: [BeerModel]? {get set}
     func fetchBeers(pagination: Bool, refresh: Bool)
     func showDetailController(navigationController:UINavigationController, indexPath: IndexPath)
-
 }
 
 protocol PresenterToViewHomeProtocol: class{
