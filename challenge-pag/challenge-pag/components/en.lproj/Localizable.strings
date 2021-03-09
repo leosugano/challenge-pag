@@ -5,8 +5,11 @@
   Created by Leonardo Sugano on 08/03/21.
   
 */
-"home_title" = "PagSeguro Challenge";
+//Error titles
 "error_title" = "Erro";
 "ok" = "ok";
 "error_conversion" = "Erro desconhecido";
+
+//Navigations Title
 "home_title" = "PunkAPI Beers";
+"detail_title" = "Detalhes";

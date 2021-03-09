@@ -45,8 +45,9 @@ class HomePresenter: ViewToPresenterHomeProtocol {
     }
     
     func showDetailController(navigationController:UINavigationController, indexPath: IndexPath) {
-
-//        router?.pushToDetailScreen(navigationConroller: navigationController)
+        if let beer = self.beersResponse?[indexPath.row] {
+            router?.pushToDetailScreen(navigationConroller: navigationController, beer: beer)
+        }
     }
 }
 

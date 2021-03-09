@@ -41,14 +41,8 @@ class HomeRouter: PresenterToRouterHomeProtocol {
     
     
     func pushToDetailScreen(navigationConroller:UINavigationController, beer: BeerModel) {
-
-    }
-    
-//    func pushToMovieScreen(navigationConroller navigationController:UINavigationController) {
-//
-//        let movieModue = MovieRouter.createMovieModule()
-//        navigationController.pushViewController(movieModue,animated: true)
-//
-//    }
-    
+        let beerDetail = DetailRouter.createModule()
+        beerDetail.presenter?.beersResponse = beer
+        navigationConroller.pushViewController(beerDetail, animated: true)
+    }    
 }
