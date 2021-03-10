@@ -1,0 +1,15 @@
+/* 
+  Localizable.strings
+  challenge-pag
+
+  Created by Leonardo Sugano on 08/03/21.
+  
+*/
+//Error titles
+"error_title" = "Erro";
+"ok" = "ok";
+"error_conversion" = "Erro desconhecido";
+
+//Navigations Title
+"home_title" = "PunkAPI Beers";
+"detail_title" = "Detalhes";
